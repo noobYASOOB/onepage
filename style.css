@@ -184,7 +184,6 @@ p a:hover{
 }
 @media only screen and (max-width: 600px){
     .name{
-        margin-top: 10px;
         color: #AF253C;
     }
     .headElement{
