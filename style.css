@@ -214,6 +214,9 @@ p a:hover{
     .bg{
         background-color: inherit;
     }
+    .navibar{
+        font-size: 17px;
+    }
 }
 .navibar{
     border: none;
