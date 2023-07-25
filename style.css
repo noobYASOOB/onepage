@@ -1,0 +1,221 @@
+body{
+    background-color: #F4F2DE;
+}
+html{
+    scroll-behavior: smooth;
+}
+.intro{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    background-color: white;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 100;
+}
+.para{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    color: #4C4B16;
+    font-weight: 600;
+}
+.para1{
+    color: #E7B10A;
+}
+.para1:hover{
+    color: #E7B10A; 
+    font-weight: 400;
+    transition: all 0.3s ease-in-out ;
+}
+.para2:hover{
+    color: #E7B10A;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out ;
+}
+.para3:hover{
+    color: #E7B10A;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out ;
+}
+.para span{
+    display: block;
+    opacity: 0;
+    animation: reveal 0.5s forwards var(--d);
+}
+@keyframes reveal{
+    from { transform: translateY(20px);}
+    to { opacity: 1; transform: none;}
+}
+@font-face {
+    font-family: Roku;
+    src: url(./Roku-Regular-BF64b23d6ddb7ae.otf);
+}
+@font-face {
+    font-family: Askana;
+    src: url(./Askana.otf);
+}
+.name{
+    display: block;
+    padding-top: 16%;
+    opacity: 0;
+    animation: reveal 0.5s forwards var(--d);
+    font-size: 40pt;
+    color: #A12539;
+    font-weight: bolder;
+    padding-left: 7%;
+}
+:root{
+    --text: black;
+    ---line: black;
+    --line-active: #A12539;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    color: var(--text);
+}
+p a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    margin: 0 var(--spacing, 0px);
+    transition: margin 0.25s;
+}
+p a svg{
+    width: 76px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 8px) translateZ(0);
+    fill: none;
+    stroke: var(--stroke, var(---line));
+    stroke-linecap: round;
+    stroke-width: 1px;
+    stroke-dasharray: var(--offset, 69px)278px;
+    stroke-dashoffset: 361px;
+    transition: stroke 0.5s ease var(--stroke-delay, 0s), stroke-dasharray 0.7s;
+}
+p a:hover{
+    --spacing: 4px;
+    --stroke: var(--line-active);
+    --stroke-delay: 0.25s;
+    --offset: 180px
+}
+.mailMe{
+    font-size: 30px;
+    font-weight: 50;
+    margin-left: 10px;
+    font-family: Askana;
+    color: black;
+}
+.mailMe:hover{
+    color: #A12539;
+    text-decoration: none;
+}
+.paraElement{
+    color: black;
+}
+.paraElement:hover{
+    transition: ease 0.7s;
+    color: #A12539;
+}
+.containertwo{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.2s all ease;
+  }
+  
+.containertwo.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+#myCarousel{
+    margin-top: 10px;
+    transform: scale(0.8);
+}
+.bg{
+    background-color: #F2F0EB;
+}
+.review{
+    font-family: 'Outfit', sans-serif;
+    font-size: 30pt;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.icon{
+    margin-top: 17px;
+    margin-left: 525px;
+    margin-bottom: 10px;
+    transform: scale(1.5);
+    background: none;
+    transition: transform .2s;
+}
+.icon:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.9);
+    border-radius: 5px;
+}
+.biscode{
+    display: inline-block;
+    float: left;
+    font-weight: 900;
+    font-family: 'Kiwi Maru', serif;
+}
+.madeby{
+    display: inline-block;
+    float: left;
+    margin-top: 13px;
+}
+@media only screen and (max-width: 600px){
+    .name{
+        margin-top: 45px;
+        color: #AF253C;
+    }
+    .headElement{
+        background-image: none;
+        background-color: #F2F0EB;
+    }
+    #hanging-icons{
+        background-color: #F2F0EB;
+    }
+    .review{
+        font-size: 20pt;
+    }
+    .biscode{
+        display: flex;
+    }
+    .alignicons{
+        float: right;
+        margin-right: 225px;
+        margin-bottom: 20px;
+    }
+    #myCarousel{
+        margin-top: 5px;
+    }
+    .madeby{
+        margin-left: 140px;
+    }
+    .bg{
+        background-color: inherit;
+    }
+}
+.navibar{
+    border: none;
+    background-color: inherit;
+}
